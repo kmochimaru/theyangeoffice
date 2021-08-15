@@ -1,0 +1,19 @@
+#install eoffice
+
+
+-upload code project > ftp > hosting
+-create db > import sql or import navicat
+-confif code /config.php and database.php
+
+
+admin / admin
+
+
+install vestacp
+-debian 9
+-php 7.0
+
+
+curl -O http://vestacp.com/pub/vst-install.sh
+
+bash vst-install.sh --nginx yes --apache yes --phpfpm no --named yes --remi yes --vsftpd yes --proftpd no --iptables yes --fail2ban yes --quota no --exim yes --dovecot yes --spamassassin yes --clamav yes --softaculous no --mysql yes --postgresql no --hostname hostname --email mail@mail.com --password password

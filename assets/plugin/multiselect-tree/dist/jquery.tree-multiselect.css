@@ -1,0 +1,139 @@
+/* jQuery Tree Multiselect v2.5.2 | (c) Patrick Tsai | MIT Licensed */
+div.tree-multiselect {
+    border: 0px solid #D8D8D8;
+    border-radius: 5px;
+    display: table;
+    height: inherit;
+    width: 100%; }
+div.tree-multiselect > div.selected,
+div.tree-multiselect > div.selections {
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 0.5%;
+    vertical-align: top;
+    width: 50%; }
+div.tree-multiselect > div.selections {
+    border-right: solid 2px #D8D8D8; }
+div.tree-multiselect > div.selections div.item {
+    margin-left: 16px; }
+div.tree-multiselect > div.selections div.item label {
+    cursor: pointer;
+    display: inline; }
+div.tree-multiselect > div.selections div.item label.disabled {
+    color: #D8D8D8; }
+div.tree-multiselect > div.selections *[searchhit=false] {
+    display: none; }
+div.tree-multiselect > div.selections.no-border {
+    border-right: none; }
+div.tree-multiselect > div.selected > div.item {
+    /*background: #e9edf2;*/
+    border-radius: 2px;
+    /*padding: 2px 5px;*/
+    overflow: auto; }
+div.tree-multiselect > div.selected.ui-sortable > div.item:hover {
+    cursor: move; }
+div.tree-multiselect div.section > div.section,
+div.tree-multiselect div.section > div.item {
+    padding-left: 20px; }
+div.tree-multiselect div.section.collapsed > div.title span.collapse-section:after {
+    content: "+"; }
+div.tree-multiselect div.section.collapsed:not([searchhit]) > .item,
+div.tree-multiselect div.section.collapsed:not([searchhit]) > .section {
+    display: none; }
+div.tree-multiselect div.title,
+div.tree-multiselect div.item {
+    color: darkslategray;
+    margin-bottom: 2px; }
+div.tree-multiselect div.title {
+    background: #e9edf2;
+    color: black;
+    padding: 2px; }
+div.tree-multiselect div.title > * {
+    display: inline-block; }
+div.tree-multiselect div.title > span.collapse-section {
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 16px; }
+div.tree-multiselect div.title > span.collapse-section:after {
+    content: "-"; }
+div.tree-multiselect div.title:hover {
+    cursor: pointer; }
+div.tree-multiselect input[type=checkbox] {
+    display: inline;
+    margin-right: 6px; }
+div.tree-multiselect input[type=checkbox]:not([disabled]):hover {
+    cursor: pointer; }
+div.tree-multiselect span.remove-selected,
+div.tree-multiselect span.description {
+    font-weight: bold;
+    font-size: 16px;
+    background: white;
+    border-radius: 50%;
+    color: red;
+    margin-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;}
+div.tree-multiselect span.remove-selected:hover {
+    cursor: pointer; }
+div.tree-multiselect span.description:hover {
+    cursor: help; }
+div.tree-multiselect div.temp-description-popup {
+    background: #EAEAEA;
+    border: 2px solid #676767;
+    border-radius: 3px;
+    padding: 5px; }
+div.tree-multiselect span.section-name {
+    margin-right: 5px;
+    float: right;
+    font-style: italic; }
+div.tree-multiselect .auxiliary {
+    padding-bottom: 15px;
+    display: table;
+    width: 100%; }
+div.tree-multiselect .auxiliary input.search {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    display: table-cell;
+    margin: 0;
+    padding: 5px;
+    width: 100%; }
+div.tree-multiselect .auxiliary .select-all-container {
+    display: table-cell;
+    text-align: right; }
+div.tree-multiselect .auxiliary .select-all-container span.select-all{
+    color: #00897b;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-right: 5px; }
+div.tree-multiselect .auxiliary .select-all-container span.unselect-all {
+    color: red;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-right: 5px; }
+div.tree-multiselect .auxiliary .select-all-container span.select-all:hover,
+div.tree-multiselect .auxiliary .select-all-container span.unselect-all:hover {
+    cursor: pointer; }
+div.tree-multiselect .auxiliary .select-all-container span.select-all {
+    border-right: 1px solid #ced4da; }
+[type="checkbox"].section{
+    height: 16px;
+    width: 16px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    background: white;
+    border: 1px solid #b1b8bb;
+    top: 0px;
+    z-index: 0; }
+[type="checkbox"].option{
+    height: 16px;
+    width: 16px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    background-color: white;
+    border: 1px solid #b1b8bb;
+    top: 0px;
+    z-index: 0; }
